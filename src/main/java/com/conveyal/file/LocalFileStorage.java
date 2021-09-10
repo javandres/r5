@@ -30,7 +30,7 @@ public class LocalFileStorage implements FileStorage {
 
     public LocalFileStorage (Config config) {
         this.directory = config.localCacheDirectory();
-        this.urlPrefix = String.format("http://localhost:%s/files", config.serverPort());
+        this.urlPrefix = String.format("http://201.159.223.152:%s/files", config.serverPort());
         new File(directory).mkdirs();
     }
 
